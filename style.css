@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans","Roboto",-apple-system,"Segoe UI",sans-serif;
+}
+
+body {
+    background: linear-gradient(
+        to right,
+        #ba9ffb 0%,
+        #ba9ffb 20%,
+        #121212 20%,
+        #121212 100%
+    );
+    min-height: 200vh;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 80px;
+    background: linear-gradient(
+    to right,
+    #ba9ffb 0%,
+    #ba9ffb 20%,
+    #121212 20%,
+    #121212 100%
+    );
+    justify-content: space-between;
+    animation: fadeIn 1s forwards;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 80px;
+    justify-content: flex-end;
+}
+
+nav a {
+    justify-content: flex-end;
+    position: relative;
+    margin: 0 15px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: x-large;
+}
+
+nav a:hover {
+    color: #ba9ffb;
+}
+
+nav a.active {
+    color: #ba9ffb;
+}
+
+main {
+    padding-top: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 3;
+}
+
+.profile {
+    transition: 1s;
+    border-radius: 100%;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+.tit {
+    color: #fff;
+    font-size: 40px;
+    align-items: center;
+    vertical-align: middle;
+    font-weight: 400;
+    font-family: "DM Sans",-apple-system,sans-serif;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0.7;
+        transform: translateY(-20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+.card {
+    background-color: #282828;
+    padding: 30px;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+
+.para {
+    color: #8b8b8b;
+    font-size: large;
+    text-align: justify;
+}
+
+.card a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.card a:hover {
+    color: #ba9ffb;
+}
+
+.logo {
+    margin-left: 35px;
+}
+
+.card-s {
+    background-color: #282828;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 200px;
+}
+
+h3 {
+    color:#fff ;
+    text-align: center;
+}
+
+button {
+    background-color: #ba9ffb;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: #ba9ffb;
+}
+
+button a {
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+
+.but {
+    padding: 20px;
+    background: linear-gradient(
+    to right,
+    #121212 0%,
+    #ba9ffb 20%,
+    #ba9ffb 80%,
+    #121212 100%
+    );
+}
+
+.lol {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 30px;
+        background: linear-gradient(
+        to right,
+        #121212 0%,
+        #121212 20%,
+        #121212 20%,
+        #121212 100%
+        );
+        justify-content: space-between;
+        animation: fadeIn 1s forwards;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        justify-content: center;
+        background-color: #121212;
+    }
+    
+    nav a {
+        justify-content: center;
+        position: relative;
+        margin: 0px;
+        margin-left: 40px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: x-large;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .profile {
+        transition: 1s;
+        border-radius: 100%;
+        margin-top: 70px;
+        justify-content: center;
+        width: 200px;
+        height: 200px;
+    }
+
+    body {
+        background: linear-gradient(
+            to right,
+            #121212 0%,
+            #121212 20%,
+            #121212 20%,
+            #121212 100%
+        );
+        min-height: 200vh;
+    }
+
+    .card {
+        background-color: #282828;
+        padding: 30px;
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .tit {
+        color: #fff;
+        font-size: 20px;
+        align-items: center;
+        vertical-align: middle;
+        font-weight: 400;
+        font-family: "DM Sans",-apple-system,sans-serif;
+    }
+}
